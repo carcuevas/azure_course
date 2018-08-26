@@ -1,0 +1,55 @@
+Azure is offering:
+
+IAAS
+PAAS = Platform as a service, we are just responsible for code and data the rest is taken care by MS
+
+About 54 Azure Regions
+
+Compute = Virtual Machine 
+
+MARKET PLACE
+------------
+
+Here we will have different options for creating our resources:
+
+    For computing:
+        When creating a VM is asking if Classic or Resource Manager, it  is just the way for creating the VM, we normally use Resource Manager. Classic will be deprecated soon enough. For "images" we  have the Market Place where we have different versions of different OS. From Ms to Cannonical, passing by other SW companies.
+
+    For Network:
+
+        Virtual NEtwork: it's clear I guess.
+        Express Route: For creating P2P connection between your ISP and Ms.(Private fast connections)
+        Traffic Manager: Traffic Load balancer running on the global level
+        
+        * There are many other to explore, even software Firewalls etc.
+
+    For Storage:
+        Data Lake storage:
+        CosmoDB
+
+    For WebMobile:
+
+    For Database:
+
+    For Data + Analytics
+
+    For  AI + Cognitive Service
+
+    For IoT:
+
+    For Enterpise Integration:
+
+    For Security + Identity:
+
+    Developer Tools:
+
+    Monitoring & Management
+
+
+
+
+		
+		
+
+		
+		
