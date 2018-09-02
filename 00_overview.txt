@@ -74,6 +74,65 @@ VIRTUAL MACHINES:
 
     Download template and parameters:
         This is at the end of the creation of the VM, actually it's going to be a JSON file with the whole configuration of the VM
+
+
+STORAGE:
+--------
+
+* By default the contents of the account are private unless we specify the opposite.
+* Eventhough the Storage accounts are coming with a public url xxxxxx.core.windows.net and it can be accessible.
+* We are charged by Gb of data
+
+    Account Kind:
+        Blob: only allow blob, it is the only one which it's available in internet and for accessing it, it's not necessary any key. Blobs are f
+        Storage: We are charged by GB of DATA. The Data is stored in very frequently accessing.
+        Storage V2: it's needed to have authorization to see the contents, we are also charged by GB of DATA but it's a bit lower than V1, but there is an increased charged by bytes IN / bytes OUT (R and W), so if we do not have to access this data much frequently so this is the one to use.
+
+    Performance:
+        Standard: maybe magnetic HD, so a bit slower
+        Premium: SSD so a bit more expensive than standard.
+
+    Replication:
+
+        - For Storage V2:
+            Locally-Redundant storage (LRS): They will keep 3 copies of your data in this option
+            Geo-Redundant storage (GRS): It's WorldWide and it keeps 6 copies, 3 in one local region and 3 another in other region
+            ReadAcess geographic (RA-GRS): Just read access
+
+        - For Storage V1:
+             * We have the same as V2 plus...
+             Zone-Redundant storage(ZRS): the same but in terms of zone
+
+
+    Access Tier:
+
+        Hot: The data is available for you. For regular use.
+        Cool: It's cheaper but whenever you saved your data, and then you will needs to retrieve this data they will charge for it. Which is great for backup. You have something like 30 days commitments that you won't access your data. If you access before you will pay some penalty.
+
+    Secure Transfer required: enforce sslhttps
+    
+
+* Once the Storage account is created you have the following SERVICES:
+
+    Blobs: Where you can store binaries, as media files images or whatever,
+        * Here we can create containers, and we can allow to R/W as we want. And we can upload files to the container, with the web admin.
+
+    Files: Actually is like a SMB3.0 fileserver
+
+    Tables: Data storage, similar to row/columns. Tabular format
+
+    Queues: Type first come first serve kind of...  Messages
+
+    
+
+    
+
+        
+
+
+
+
+    
            
 
         
