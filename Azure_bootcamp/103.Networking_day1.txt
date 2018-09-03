@@ -1,0 +1,43 @@
+==============
+NETWORKING  ==
+==============
+
+
+
+Networking Fundamentals:
+---------------------
+
+	* Always in design start with the network, so we can know how the VNET
+	* Use "Network segmintation" using SUbnets - Network Security Groups. So not all servers are having access to internet for example.
+	* Control
+
+
+	-> The Front-End Layer
+		* Use azure buit-in 3ed party load balancing solutions
+		* Azure reusources can have Privat and Public IP adresses
+		* By default A public IP address allow VM remote access (RDP/SSH)
+		* Azure DNS is the default, but we can bring our own DNS
+
+	-> The Back-End layer
+		* Site_2_Site VPN
+		* P_2_Site VPN
+		* ExpressRoute: Network inter-connecting our Data center with M$
+		* VNet Peering: communication among VNets
+
+
+	Network Security Group (NSG): where you can configure what ports are open 
+
+ * In VNETs we can have different IP ranges, ( take care not to overlap them)
+ * For a VM we can set Public IP address with Fixed IP, 20 addresses for free. Best to change it, it's editing the configuration of the network interface, and NOT from VM configuration.
+	 * internet to vnet is not ecnrypted !!! 
+
+ VNET Peering: Connect two VNETs in the same region. Using the Azure Backbone network.Charged apart.  If we want to inter-region VNET peering, we need to create a VPN between both of them. You have to create Peering in both ways from VNET A to VNET B and VNET B to VNET A
+
+		 * internet to vnet is not ecnrypted 
+		 * Max 10 Peering per VNET
+
+Azure Network Watcher = Azure solution as WireShark
+
+
+
+

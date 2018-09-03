@@ -1,0 +1,28 @@
+INTRO:
+------
+
+WRegions:  There are between 3 and 5 datacenters, separated some Kilimeters, some ISO rule.
+
+Inter-region connectivity: not using public internet. using there own "MS  Backbone" as in ecnrypted. (Main differece with AWS)
+
+Logical Function = Lambda in AWS 
+
+* Sometimes it's needed to restart the machines when added memory
+
+About Security
+	* it we don't patch our VM in six months, Azure will stop the servers for us because of security concerns.
+
+
+
+
+About Architecture:
+
+	* Pattern & Practices for having some examples for architecting solutions.
+
+		https://github.com/mspnp
+		https://docs.microsoft.com/azure/architecture/
+
+
+
+
+* Attention: Resource Groups can be created in different regions than the Resources inside this Resource Group, that's why Resource Group will be just some metadata

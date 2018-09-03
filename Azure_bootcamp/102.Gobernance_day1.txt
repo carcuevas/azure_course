@@ -1,0 +1,85 @@
+==============
+GOBERNANCE  ==
+==============
+
+
+
+Azure Subrscriptions:
+---------------------
+
+ * Agreement with M$ for using Azure
+
+There are 2 ways to consume resources: 
+
+	Azure Services: Pay for what you used, like VM, storage
+	Azure Plans:	Consumption formula, pre-pay: analytics, Azure support, licensing.
+
+Virtual Machines are going to be charged by minute
+Bsackup: for Gb
+Azure active directory: charged per user
+
+
+in DB we have Enterprise Agreement, where there are some monetary commitment. But better to go to Cloud Solution Provider
+
+
+
+
+Azure Cost management:
+----------------------
+
+	* To move data TO azure has no cost, but retrieving it does have cost
+	* To spin a VM for example in US regions can be up to 5% cheaper (of course after currency conversion into EURO it wont make any sense)
+
+	We paid for many R/W operations, VM and many other things, so better to control those costs so for that we are using:
+
+		Tag Enrichment: Use tags as in AWS. 15 labels max?
+		Budget: You can manage the budget for month, which it's not that simple to calculate because normally it's up & down. So for helping into that we can use:
+			(in azure portal not in console)			
+			* Pricing Calculator: you can do monthly expected prices
+			* TCO Calculator: 
+			* Cost Management Cloudyn: recently adquired by M$, it can calculate actual comsumption, even can do some small forecasting. 
+
+
+		Forecasting:
+		Reource Optimization:
+		Cost Optimization:
+		Cost Allocation:
+
+
+
+Admin Governance:
+-----------------
+
+	* Who can do what in the Azure environment.
+
+	Resource Exploration: it will come list of resources
+	Policy -> Compliance: you can lock down some of the resources
+	Bluepirnt -< Governed environment
+	Cost Reporting
+	Usage Optimization
+
+
+	Azure Subrscription Security:  Using Azure Active Directory (they are users/group/service principals) and we map the account to an Azure subscription. We can map the resources into Resource Group where can be assigned to users/groups in active directory. Using Role Acess control:
+			There is just one Account Administrator: 1 per Azure Account. Like root account
+									Service Administrator: 1 per azure subscription
+									Co-administrator: 200 per subscription
+
+
+	Azure Policies:
+	
+			* The policies applications are applied inmediately, so careful you can block access inmediately
+
+Policy rules can be done, using JSON format, for example spinning out VM without tag will not even start, or a policy to assure naming conventions.
+
+For doing plicies we can use Azure Policy center (at the beginning was done in powershit now it's quite easier) you go to #Policy - Definitions > Policy Definition
+
+Also Compliance in #Policy - Compliance so it will tell us if the policy are not fulfilled somewhere.
+
+Resource Locks: you can prevent to delete some resources, with the lock on, For example we can protect for deletion or for example put some resources in RO. We can do it Resource Groups > and set it there.
+
+		
+
+
+
+
+
