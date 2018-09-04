@@ -38,6 +38,49 @@ Networking Fundamentals:
 
 Azure Network Watcher = Azure solution as WireShark
 
+Load Balancing: (good to use it)
+-----------------
+
+	There are some built ones solutions apart from 3rd party 
+
+	* Layer 4
+	* External Load balancer= one public IP address and a some internal ones
+	* Internal load balancer
+
+	We have to flavours:
+
+		BASIC= Free, no HA
+		STANDARD = charged with HA 
 
 
+ * Availability set
+
+ Health Probes: Are some load balancing rules, it's checking for example if a port is open, so if it's opened it's meaning that it's ok.
+
+
+Azure Application Gateway (Just for HTTP / HTTPS)
+-------------------------------------------------
+
+		* Up to Level 7 
+		*  Load balancer only HTTP / HTTPS
+		*  Only Ext. Facing load manager
+		* SSL  offloading. Web Application firewall (WAF)
+		* URL Base routing !! 
+
+
+Trafic Manager
+--------------
+
+	* Load balancing across regions ... 
+	* Always DNS based
+	* Automatically it will decided (normally geographically based) to what region it would going
+
+
+Hybrid Networking
+------------------
+
+	* connect on premises networking to cloud
+	* Needed a VPN gateway to do that
+	
+	
 

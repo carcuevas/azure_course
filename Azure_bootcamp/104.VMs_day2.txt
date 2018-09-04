@@ -1,0 +1,23 @@
+======================
+VIRTUAL MACHINES    ==
+======================
+
+
+
+VM Managed DISKS:
+-----------------
+
+	* Data always encrypted.
+
+VM Scales set: (Horizontal scaling)
+---------------
+
+
+	* Automatically scaling. UP/DOWN, creating up to 1000VM in VMSS
+	* Configurable DNS and attached disks.
+	* You can set a MAximum of VMs which will control the maximum cost
+
+
+
+* Attention when selecting disks for a VM, there is NO SLA for non Premium Storage, so standard storage has NO SLA
+

@@ -1,0 +1,41 @@
+=================
+STORAGE        ==
+=================
+
+
+**   DON'T USE STORAGE ACCOUNT (Disk Classic) FOR PROD! so used MANAGED DISKS!!!
+
+BLOBS
+--------
+
+	* Cloud object oriented storage (like S3 in AWS) for APP and web scale data.
+
+	* Types:
+			- Block Blobs: most object storage scneraios
+			- Append blobs: multi-writer (for instance logs)
+	* We have to have an Storage account, where we will have "Containers" (as folders) where we'll have our 
+
+	* url. https://{account}.blob.core.windows.net/container/{blob_name}
+
+
+
+Tables
+---------
+
+	* Like dyanmoDB in AWS
+
+
+
+
+Queues
+----------
+
+	* Messages between API for example
+
+
+
+
+Unmanaged vs Managed disks : Manage disks are faster better more reliable and more expensive :D
+
+
+Cold Storage - Storage Tier like Glacier for AWS
