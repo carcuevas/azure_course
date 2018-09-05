@@ -1,0 +1,44 @@
+=========================
+IAC  (Infra as Code)   ==
+=========================
+
+
+ARM Templates
+--------------
+
+	*	JSON based
+
+	For building a VM you need to specify 5 parts: VM, V.Network, publicIPAddress, storageAccount and network interface
+
+	For creating ARM you can use Automation script portal from Azure, Visual Studio, Quicksstart Templates from GitHub, starting from blank or do the combination the 3.
+	
+	* Never store passwords, use keys
+	* Use parameter files, for names/locations/ip .
+
+	* For every Resource, we'll have to specify the apiVersion for the Resource, so it can happen that there will be a new version and the one we are using is depricated so it will be rejected.
+
+
+For deplying JSON in ARM, are:
+
+	* Or template deploynment
+	* You can integrated with GitHUB for launching your templates. (not direct connection to onpremise Github)
+
+
+	
+There are a set of function so we can somehow 
+
+
+
+*** IAAC DevOPS tools
+------------------
+
+* Check pag 31 for info
+
+  Terraform:
+  -----------
+
+		* Multi-cloud
+		* Json format
+		* You can create almost everything in Azure with Terraform
+
+		* you can even embed ARM templates inside the Terraform script ;-) 
