@@ -1,0 +1,37 @@
+===============
+DBs			 ==
+===============
+
+
+ * Always choose if possible to have as PAAS or IAAS, sometimes some requirements are not feasable in PAAS but whenever is possible is not ba idea.
+
+
+why PAAS?
+
+ * 99.99 SLA !
+ * We can do even maker HA easyly 
+ * Supported more dbs than just Ms SQL server
+
+SQL PaaS Options:
+------------------
+	* First check if the app is working 100% compatible
+	* IT's more expensive
+	
+
+
+Big DATA:
+----------
+
+	* it's needed computer power, where is performed queries and data analytics to produced some outputs.  Or for example Streaming Data as used for IoT and sensors. Also can be conbined with Machine Learning.
+
+	* Data Analytics in Azure ae SQL DAta Warehouse, or even for bigger data is Data Lake Antalytics; but we can use as IaaS Hadoop or another
+
+
+:
+----------
+
+
+
+
+
+
