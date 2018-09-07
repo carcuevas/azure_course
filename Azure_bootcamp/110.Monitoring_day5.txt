@@ -1,0 +1,13 @@
+===============
+Monitoring  ==
+===============
+
+
+ * There are 11 parts really messy thing
+
+	Network Monitoring:
+	Azure Monitor: Not really a monitor tools, it just pointing to 4 another motniroing tool
+	OMS Log Anatlytics (Operated Managment )
+	Application Insights (:
+	Azure Automation
+
